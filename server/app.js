@@ -10,7 +10,7 @@ const homeRouter=require("./src/router/homeRouter")
 //------------using the created router----------
 app.use("/",homeRouter)
 //-------------connecting to my mongodb cloud-------------
-mongoose.connect("mongodb+srv://jihana:Jihana%40123@webpagescraper.0zlf0.mongodb.net/wordCounter?retryWrites=true&w=majority",()=>{
+mongoose.connect("mongodb+srv://jihana:Jihaan%40123@webpagescraper.0zlf0.mongodb.net/wordCounter?retryWrites=true&w=majority",()=>{
     console.log("Database Connected")
 })
 app.listen(process.env.PORT || 1235,()=>{
