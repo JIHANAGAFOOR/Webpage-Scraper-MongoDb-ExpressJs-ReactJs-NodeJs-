@@ -7,15 +7,15 @@ export default function WebsiteList(){
   const [DbData,setDbData]=useState([])
   useEffect(()=>{
     // -----Fetching all items from db-----
-    axios.get("https://webpagescraper.herokuapp.com/view").then((details)=>{
+    axios.get("http://localhost:1235/view").then((details)=>{
     console.log("DB details"+JSON.stringify(details.data.Dataa));
     setDbData(details.data.Dataa)
-  
+    console.log(DbData);
   })
   })
   //------ to delete an item  from the table ------
    function deleteRecord(id) {
-    fetch(`https://webpagescraper.herokuapp.com/${id}`, {
+    fetch(`http://localhost:1235/${id}`, {
       method: "DELETE"
     });
     setDbData(DbData.filter((val)=>{
@@ -25,10 +25,11 @@ export default function WebsiteList(){
   }
   //-------- upadate to add favourites------
   function updateRecord(id){
-    fetch(`https://webpagescraper.herokuapp.com/update/${id}`, {
+    fetch(`http://localhost:1235/update/${id}`, {
       method: "PUT"
     });
     setDbData(DbData.filter((val)=>{
+console.log("ssssssssssss"+JSON.stringify(!val.favourite));
 return (!val.favourite)
     }
     ))
