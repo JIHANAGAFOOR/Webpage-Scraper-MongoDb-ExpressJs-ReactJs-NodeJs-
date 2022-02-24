@@ -1,0 +1,21 @@
+.main_div{
+    background-color: rgb(57, 116, 121);
+    padding: 20px;
+    position: sticky;
+    border-radius: 20px;
+}
+.website_heading{
+    text-align: center;
+    font-family: 'Freespace',monospace;
+    font-weight: 900;
+}
+.button_Text{
+background-color: rgb(18, 58, 77);
+font-family: 'Freespace',monospace;
+font-weight: 900;
+border: none;
+}
+.button_Div{
+    justify-content: center;
+    display: flex;
+}

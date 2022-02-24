@@ -1,0 +1,40 @@
+
+.table_main_div {
+  overflow-y: auto;
+  height: 500px;
+ 
+}
+.table_main_div::-webkit-scrollbar {
+  display: none;
+}
+th{
+  text-align: center;
+}
+table {
+  border-radius: 20px;
+
+  table-layout: fixed ;
+  width: 100% ;
+  background-color: rgb(122, 201, 201);
+  
+}
+td {
+  width: 25% ;
+  overflow: auto;
+  text-align: center;
+}
+td::-webkit-scrollbar {
+  display: none;
+}
+.actions{
+  display: flex;
+}
+.delete{
+  color: rgb(27, 53, 94);
+}
+.Favour{
+  background-color: rgb(10, 92, 124);
+  border-radius: 7px;
+  color: white;
+  /* border: none; */
+}
