@@ -10,7 +10,7 @@ export default function WebsiteList(){
     axios.get("https://webpagescraper.herokuapp.com/view").then((details)=>{
     console.log("DB details"+JSON.stringify(details.data.Dataa));
     setDbData(details.data.Dataa)
-    console.log(DbData);
+    // console.log(DbData);
   })
   })
   //------ to delete an item  from the table ------
