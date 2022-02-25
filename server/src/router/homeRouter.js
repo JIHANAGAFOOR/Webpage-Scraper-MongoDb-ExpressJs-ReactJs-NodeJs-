@@ -11,7 +11,7 @@ homeRouter.post("/", (req, res) => {
   //----------------use cheerio module to get each items in web page---------
             var $ = cheerio.load(html);
                // Get text 
-            console.log($.text());
+            // console.log($.text());
    //----------------finding and couting each word in webpage----------
             var text = $.text().split(' ');
             var wordCount = 0;
